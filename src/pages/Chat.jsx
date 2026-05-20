@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import logo from "../assets/logo.png"
+
 function Chat() {
 
   const [message, setMessage] = useState("")
@@ -43,9 +45,18 @@ function Chat() {
         {/* TOP BAR */}
         <div className="h-[70px] px-5 flex items-center justify-between border-b border-[#222d34]">
 
-          <h1 className="text-2xl font-bold text-[#8b5cf6]">
-            NexUp
-          </h1>
+          <div className="flex items-center gap-3">
+
+            <img
+              src={logo}
+              className="w-11 h-11 rounded-2xl object-cover"
+            />
+
+            <h1 className="text-2xl font-bold text-[#8b5cf6]">
+              NexUp
+            </h1>
+
+          </div>
 
           <div className="flex gap-5 text-gray-400 text-xl">
             <span>💬</span>
