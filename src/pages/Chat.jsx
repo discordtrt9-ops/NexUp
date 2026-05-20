@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-import logo from "../assets/logo.png"
-
 function Chat() {
 
   const [message, setMessage] = useState("")
@@ -47,10 +45,9 @@ function Chat() {
 
           <div className="flex items-center gap-3">
 
-            <img
-              src={logo}
-              className="w-11 h-11 rounded-2xl object-cover"
-            />
+            <div className="w-11 h-11 rounded-2xl bg-[#8b5cf6] flex items-center justify-center text-white font-bold text-xl">
+              N
+            </div>
 
             <h1 className="text-2xl font-bold text-[#8b5cf6]">
               NexUp
